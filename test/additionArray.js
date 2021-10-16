@@ -1,0 +1,1 @@
+//**c)Sum all the elements of an array: [1,34,56,72,123]*/

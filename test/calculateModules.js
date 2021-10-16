@@ -1,0 +1,1 @@
+//**d)Write a program to calculate the modules of two numbers without using any inbuilt modulus operator */

@@ -1,0 +1,1 @@
+/**b)From the following array ['a''b''c''d'], validate if it contains the following values: 'a' 'b' 'f'. Return a Boolean depending on the result*/
