@@ -21,8 +21,7 @@ async function amazonTest() {
         console.log('Title is:',title);
         await driver.wait(until.titleIs(titleName));
         //**Extract the number of result on the first screen */
-        number = driver.findElements(By.xpath(locatorResults)).size();
-        console.log('Number of result on the first screen: ', number);
+        number = await driver.findElements(By.xpath(locatorResults)).then(elements => console.log('Number of result on the first screen: ', elements.length));
     } finally {
         await driver.quit();
     }
