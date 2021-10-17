@@ -1,7 +1,7 @@
 import { Then } from '@cucumber/cucumber';
 
-import checkContainsText from '../support/check/checkContainsText';
-import compareText from '../support/check/compareText';
+import checkContainsText from '../utils/checkContainsText';
+import compareText from '../utils/compareText';
 
 Then(
     /^I expect that element "([^"]*)?"( not)* contains the same text as element "([^"]*)?"$/,

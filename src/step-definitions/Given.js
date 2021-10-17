@@ -1,8 +1,8 @@
 import { Given } from '@cucumber/cucumber';
 
-import checkTitle from '../support/check/checkTitle';
-import checkUrl from '../support/check/checkURL';
-import openWebsite from '../support/action/openWebsite';
+import checkTitle from '../utils/checkTitle';
+import checkUrl from '../utils/checkUrl';
+import openWebsite from '../utils/openWebsite';
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,

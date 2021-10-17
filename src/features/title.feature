@@ -1,5 +1,5 @@
 Feature: Test the page title
-    As a developer
+    As a user
     I want to be able to test if a page has a certain title
 
     Background:
