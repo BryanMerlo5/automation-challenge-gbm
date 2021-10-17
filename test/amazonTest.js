@@ -3,18 +3,25 @@ const {By, Key, Builder, until} = require("selenium-webdriver");
 require("chromedriver");
 
 async function amazonTest() {
+    const titleName = "Amazon.com.mx : pantallas";
+    const page = 'https://www.amazon.com.mx';
+    const idSearchTextBox = 'twotabsearchtextbox';
+    const locatorResults = '//*[@data-component-type="s-product-image"]';
+
     //**Open browser */
     let driver = await new Builder().forBrowser("chrome").build();
+    let title, number;
     try {
+
         //**Go to Amazon page */
-        await driver.get('https://www.amazon.com.mx');
+        await driver.get(page);
         //**Find  the word "pantallas" */
-        await driver.findElement(By.id('twotabsearchtextbox')).sendKeys('pantallas', Key.RETURN);
-        let title = await driver.getTitle();
+        await driver.findElement(By.id(idSearchTextBox)).sendKeys('pantallas', Key.RETURN);
+        title = await driver.getTitle();
         console.log('Title is:',title);
-        await driver.wait(until.titleIs("Amazon.com.mx : pantallas"));
+        await driver.wait(until.titleIs(titleName));
         //**Extract the number of result on the first screen */
-        let number = driver.findElements(By.xpath('//*[@data-component-type="s-product-image"]'));
+        number = driver.findElements(By.xpath(locatorResults)).size();
         console.log('Number of result on the first screen: ', number);
     } finally {
         await driver.quit();
