@@ -2,7 +2,7 @@ import { Given } from '@cucumber/cucumber';
 
 import checkTitle from '../utils/checkTitle';
 import checkUrl from '../utils/checkUrl';
-import openWebsite from '../pageobjects/page';
+import openWebsite from '../utils/openWebsite';
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
