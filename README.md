@@ -2,6 +2,10 @@
 
 This framework is build as an asynchronous event-driven JavaScript runtime.
 
+#How To Install
+- Install nodeJS ```10.16.0``` or higher (Here)[https://nodejs.org/en/download/]
+- Intall Visual Studio Code (Here)[https://visualstudio.microsoft.com/es/downloads/]
+
 ## 1. Perform the following exercises in the language of your choice or in pseudocode:
 
 - a)Calculate the factorial of a number

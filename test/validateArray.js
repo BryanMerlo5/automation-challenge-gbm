@@ -11,5 +11,6 @@ function isPresentInArray(arr, val) {
   }
 }
 
-isPresentInArray(arr, 'x');
 isPresentInArray(arr, 'a');
+isPresentInArray(arr, 'b');
+isPresentInArray(arr, 'f');
