@@ -5,6 +5,9 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 # How To Install
 - Install nodeJS ```10.16.0``` or higher [Here](https://nodejs.org/en/download/)
 - Install Visual Studio Code [Here](https://visualstudio.microsoft.com/es/downloads/)
+- Git clone ```https://github.com/BryanMerlo5/automation-challenge-gbm.git```
+- Go to the path where you cloned the framework e.g. ```~/Documents/repos/automation-challenge-gbm (main)```
+- Execute the command ```npm i``` or ```npm install```
 
 ## 1. Perform the following exercises in the language of your choice or in pseudocode:
 
