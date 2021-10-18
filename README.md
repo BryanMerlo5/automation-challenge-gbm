@@ -25,7 +25,13 @@ You can find the exercises in:
 
 ![Exercies](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/exercises.PNG)
 
- 
+ To Execute the exercises you can execute the following commands in the console(Gitbash, CLI, Github CLI, etc):
+
+ - ```node test/additionArray.js```
+ - ```node test/calculateFactorialNumber.js```
+ - ```node test/calculateModules.js```
+ - ```node test/numberDaysByMonth.js```
+ - ```node test/validateArray.js```
 
 ## 2. In Gherkin language, describe a test case to acquire a product online, beggining with the choice until the purchase
 
@@ -65,6 +71,8 @@ You can find the selenium script in:
 
  ![selenium](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/seleniumScriptForAmazon.PNG)
  
+
+To Execute this script you can execute the command  ```node test/amazonTest.js``` in the console(Gitbash, CLI, Github CLI, etc)
 
 ## 5. Design a high level architecture script using POM
 
