@@ -33,9 +33,9 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 
 - ```WebDriverWait wait = new WebDriverWait(driver 30);``` 
 
-        ```wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(“other-button”)));```
+    ```wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(“other-button”)));```
 
-        ```driver.findElement(By.id(“last_name”)).sendKeys(“Hi”);```
+    ```driver.findElement(By.id(“last_name”)).sendKeys(“Hi”);```
 
 - ```Assert.assertTrue(false);```
 
