@@ -4,23 +4,22 @@
  *                                expected value or not
  * @param  {String}   expectedUrl The expected URL to check against
  */
- export default async (falseCase: boolean, expectedUrl: string) => {
+ module.exports = (falseCase, expectedUrl) => {
     /**
      * The current browser window's URL
      * @type {String}
      */
-    const currentUrl = await browser.getUrl();
+    const currentUrl = browser.url().value;
 
     if (falseCase) {
-        expect(currentUrl)
-            // @ts-expect-error
-            .not.toEqual(expectedUrl, `expected url not to be "${currentUrl}"`);
+        expect(currentUrl).to.not
+            .equal(expectedUrl, `expected url not to be "${currentUrl}"`);
     } else {
-        expect(currentUrl).toEqual(
-            expectedUrl,
-            // @ts-expect-error
-            `expected url to be "${expectedUrl}" but found `
-            + `"${currentUrl}"`
-        );
+        expect(currentUrl).to
+            .equal(
+                expectedUrl,
+                `expected url to be "${expectedUrl}" but found ` +
+                `"${currentUrl}"`
+            );
     }
 };

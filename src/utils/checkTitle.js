@@ -4,24 +4,24 @@
  *                                  expected value or not
  * @param  {Type}     expectedTitle The expected title
  */
- export default async (falseCase: boolean, expectedTitle: string) => {
+ module.exports = (falseCase, expectedTitle) => {
     /**
      * The title of the current browser window
      * @type {String}
      */
-    const title = await browser.getTitle();
+    const title = browser.getTitle();
 
     if (falseCase) {
-        expect(title).not.toEqual(
-            expectedTitle,
-            // @ts-expect-error
-            `Expected title not to be "${expectedTitle}"`
-        );
+        expect(title).to.not
+            .equal(
+                expectedTitle,
+                `Expected title not to be "${expectedTitle}"`
+            );
     } else {
-        expect(title).toEqual(
-            expectedTitle,
-            // @ts-expect-error
-            `Expected title to be "${expectedTitle}" but found "${title}"`
-        );
+        expect(title).to
+            .equal(
+                expectedTitle,
+                `Expected title to be "${expectedTitle}" but found "${title}"`
+            );
     }
 };

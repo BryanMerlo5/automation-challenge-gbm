@@ -1,39 +1,31 @@
-import type { Selector } from 'webdriverio';
-
 /**
  * Compare the contents of two elements with each other
- * @param  {String}   selector1  Element selector for the first element
+ * @param  {String}   element1  Element selector for the first element
  * @param  {String}   falseCase Whether to check if the contents of both
  *                              elements match or not
- * @param  {String}   selector2  Element selector for the second element
+ * @param  {String}   element2  Element selector for the second element
  */
-export default async (
-    selector1: Selector,
-    falseCase: boolean,
-    selector2: Selector
-) => {
+ module.exports = (element1, falseCase, element2) => {
     /**
      * The text of the first element
      * @type {String}
      */
-    const text1 = await $(selector1).getText();
+    const text1 = browser.getText(element1);
 
     /**
      * The text of the second element
      * @type {String}
      */
-    const text2 = await $(selector2).getText();
+    const text2 = browser.getText(element2);
 
     if (falseCase) {
-        expect(text1).not.toEqual(
+        expect(text1).to.not.equal(
             text2,
-            // @ts-expect-error
             `Expected text not to be "${text1}"`
         );
     } else {
-        expect(text1).toEqual(
+        expect(text1).to.equal(
             text2,
-            // @ts-expect-error
             `Expected text to be "${text1}" but found "${text2}"`
         );
     }
