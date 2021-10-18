@@ -21,10 +21,17 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 
 - Write a program to find the number of days in a month
 
+You can find the exercises in:
+
+![Exercies](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/exercises.PNG)
+
  
 
 ## 2. In Gherkin language, describe a test case to acquire a product online, beggining with the choice until the purchase
 
+You can find the test case in: 
+
+![TestCase](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/gherkinTestCase.PNG)
  
 
 ## 3. Explains the next lines of code:
@@ -39,6 +46,9 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 
 - ```Assert.assertTrue(false);```
 
+ You can find the explanation about this commands:
+
+ ![Explains](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/explainCodeLines.PNG)
  
 
 ## 4. Design a script with selenium commands (not is necessary use some language programming)
