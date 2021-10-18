@@ -61,6 +61,12 @@ You can find the test case in:
 
 - Extract the number of result on the first screen
 
+You can find the selenium script in:
+
+ ![selenium](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/seleniumScriptForAmazon.PNG)
  
 
 ## 5. Design a high level architecture script using POM
+
+You can find the architecture script in:
+ ![selenium](https://github.com/BryanMerlo5/automation-challenge-gbm/blob/main/img/pageObjectModel.PNG)
