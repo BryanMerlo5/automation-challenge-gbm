@@ -1,8 +1,5 @@
 /**3. Explains the next lines of code:a) Driver.findElements(By.id(“btn-1”)).get(3).click();*/
 
-const { By } = require("selenium-webdriver")
-
-
 //a) Driver.findElements(By.id(“btn-1”)).get(3).click();
 /**[Driver] is an instance of selenium WebDriver.
 [findElements] is used to find all elements in the current webpage matching to the specific locator.
