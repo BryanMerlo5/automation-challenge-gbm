@@ -11,15 +11,15 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 
 ## 1. Perform the following exercises in the language of your choice or in pseudocode:
 
-- a)Calculate the factorial of a number
+- Calculate the factorial of a number
 
-- b)From the following array ```['a''b''c''d']```, validate if it contains the following values: ```'a' 'b' 'f'```. Return a Boolean depending on the result
+- From the following array ```['a''b''c''d']```, validate if it contains the following values: ```'a' 'b' 'f'```. Return a Boolean depending on the result
 
-- c)Sum all the elements of an array: ```[1,34,56,72,123]```
+- Sum all the elements of an array: ```[1,34,56,72,123]```
 
-- d)Write a program to calculate the modules of two numbers without using any inbuilt modulus operator
+- Write a program to calculate the modules of two numbers without using any inbuilt modulus operator
 
-- e)Write a program to find the number of days in a month
+- Write a program to find the number of days in a month
 
  
 
@@ -29,15 +29,15 @@ This framework is build as an asynchronous event-driven JavaScript runtime.
 
 ## 3. Explains the next lines of code:
 
-- a) ```Driver.findElements(By.id(“btn-1”)).get(3).click();```
+- ```Driver.findElements(By.id(“btn-1”)).get(3).click();```
 
-- b) ```WebDriverWait wait = new WebDriverWait(driver 30);``` 
+- ```WebDriverWait wait = new WebDriverWait(driver 30);``` 
 
-    ```wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(“other-button”)));```
+        ```wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(“other-button”)));```
 
-    ```driver.findElement(By.id(“last_name”)).sendKeys(“Hi”);```
+        ```driver.findElement(By.id(“last_name”)).sendKeys(“Hi”);```
 
-- c) ```Assert.assertTrue(false);```
+- ```Assert.assertTrue(false);```
 
  
 
